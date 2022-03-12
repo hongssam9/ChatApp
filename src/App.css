@@ -20,8 +20,6 @@
     }
     .app__body {    
         margin: auto;
-        box-shadow: none;
-        position: fixed;
-        
+        box-shadow: none; 
     }
 }
