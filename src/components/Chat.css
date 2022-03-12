@@ -66,8 +66,12 @@
     background-position: center;
     padding: 30px;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
 }
-
+.chat__body::-webkit-scrollbar {
+    display: none;
+  }
 .chat__footer{
     display: flex;
     justify-content: space-between;

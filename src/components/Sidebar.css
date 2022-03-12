@@ -5,6 +5,8 @@
     background-color: #BFCFDC;
 }
 
+
+
 .sidebar__search {
     display: flex;
     align-items: center;
@@ -54,7 +56,11 @@
 
 .sidebar__chats {
     flex: 1;
-    background-image: linear-gradient(#C4D3DE, #F2CBC6);
+    background-image: linear-gradient();
     overflow: scroll;
     /* border-radius: 0 0 0 30px; */
 }
+
+.sidebar__chats::-webkit-scrollbar {
+    display: none;
+  }
