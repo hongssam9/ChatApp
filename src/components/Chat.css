@@ -62,13 +62,13 @@
 .chat__body {
     flex: 1;
     background-image: url("https://media1.popsugar-assets.com/files/thumbor/TX9naAGOWgoSQM94AidjXrfeyqA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2021/01/14/843/n/1922507/dc8bfea2c1e7f671_guillaume-galtier-5aklrccCH7w-unsplash/i/Pink-Sky-Zoom-Background.jpg");
-    background-repeat: repeat;
-    background-position: center;
+    background-size: 100vw 100vh;
     padding: 30px;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; /* Firefox */
 }
+
 .chat__body::-webkit-scrollbar {
     display: none;
   }
@@ -104,4 +104,17 @@
 .chat__footer > .MuiSvgIcon-root {
     padding: 10px;
     color: gray;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .chat__body {
+        flex: 1;
+        background-image: none;
+        background-color: #B5C7D6; 
+    }
+    .chat{
+        flex: 0.65;
+        display: flex;
+        flex-direction: column;
+    }
 }

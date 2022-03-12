@@ -5,8 +5,6 @@
     background-color: #BFCFDC;
 }
 
-
-
 .sidebar__search {
     display: flex;
     align-items: center;
@@ -63,4 +61,13 @@
 
 .sidebar__chats::-webkit-scrollbar {
     display: none;
+  }
+
+  @media only screen and (max-device-width: 600px) {
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        flex: 0.01;
+        background-color: #BFCFDC;
+    }
   }
